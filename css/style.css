@@ -331,16 +331,33 @@ h1, h2, h3 {
     /* display: flex; */
     column-gap: 1rem;
 }
+.column1, .column2, .column3 {
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* column-gap: 1rem;     */
+}
 
 .main1, .main2, .main3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.part1, .part2, .part3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .main1, .main3 {
-    height: 45rem;
-    width: 15rem;
+    height: auto;
+    width: 100%;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -348,8 +365,8 @@ h1, h2, h3 {
 }
 
 .main2 {
-    height: 47rem;
-    width: 15rem;
+    height: auto;
+    width: 100%;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -357,12 +374,13 @@ h1, h2, h3 {
 }
 
 .iconos {
-    height: auto;
-    width: 100%;
+    height: 15rem;
+    width: 15rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .iconos {
@@ -449,6 +467,65 @@ h1, h2, h3 {
         column-gap: 1rem;
     }   
 } */
+
+.formulario {
+    background-color: var(--gris);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--primario);
+}
+
+.campo {
+    margin-bottom: 1.5rem;
+}
+
+.campo label {
+    display: block;
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.input-text {
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+label {
+    text-align: left;
+}
+
+/* .w90 {
+    width: 90%;
+} */
+
+.boton2 {
+    margin: 0rem;
+    background-color: var(--secundario);
+    padding: 1rem 3rem;
+    color: var(--blanco);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-radius: 0.8rem;
+    border: none;
+    text-align: center;
+    width: 90%;    
+}
 
 footer {
     position: fixed;
